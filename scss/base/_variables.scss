@@ -1,0 +1,30 @@
+
+// Descriptive color variables
+
+$white			: #fff;
+$gallery		: #efefef;
+$tarawera		: #093a58;
+$mine-shaft		: #3a3a3a;
+
+// Functional color variables
+
+$header-footer-background : $gallery;
+$header-link-background	  : $white;
+$color-link-hover		  : $tarawera;
+$color-body				  : $mine-shaft;
+
+// Fonts
+
+$stack-varela		: 'Varela Round', sans-serif;
+$stack-serif		: Courier, serif;
+
+// Font-Sizes
+
+$size-lead			: 1.25em;
+$size-body			: .95em;
+$size-body-small	: .85em;
+
+//Media query breakpoints
+
+//$tablet		:	'(max-width: 768px)';
+//$desktop	:	'(max-width: 1024px)';

@@ -1,0 +1,52 @@
+.main-nav {
+
+	@include tablet {
+		display: inline-block;
+	}
+
+	@include desktop {
+		float: right;
+		width: 60%;
+		margin-top: -.35em;
+		text-align: right;
+	}
+
+	li {
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		@include tablet {
+			display: inline-block;
+  			margin-left: 15px;
+		}
+	}
+
+	a {
+		&:link {
+			font-size: $size-body;
+			text-transform: uppercase;
+			padding: 10px;
+			background: $header-link-background;
+			display: block;
+		}
+
+		&:hover {
+			color: $color-link-hover;
+		}
+	}
+
+	a:link {
+		@include tablet {
+			background: transparent;
+			display: inline-block;
+		}
+	}
+}
+
+
+header {
+	@extend %margin-bottom;
+	background: $header-footer-background;
+}
+
+

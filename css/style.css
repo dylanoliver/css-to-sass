@@ -1,0 +1,101 @@
+/* ================================= 
+  Base Layout Styles
+==================================== */
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+  .container {
+    width: 90%;
+    margin: 0 auto; }
+
+  .name {
+    margin-bottom: 0; }
+
+  .main-nav {
+    display: inline-block; }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px; }
+
+  .main-nav a {
+    background: transparent;
+    display: inline-block; }
+
+  .profile-photo {
+    float: right;
+    width: 40%; }
+
+  .lead {
+    float: left;
+    width: 60%;
+    text-align: left;
+    padding: 0 1.25em;
+    margin-top: 0; }
+
+  .col {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+    padding-right: 1em;
+    padding-left: 1em; }
+
+  .mobile {
+    visibility: hidden; }
+
+  .tablet {
+    visibility: visible; }
+
+  .left {
+    float: left;
+    width: 40%; }
+
+  .right {
+    float: left;
+    width: 60%; }
+
+  .tablet li.right {
+    display: inline-block;
+    width: 20%; }
+
+  /* ---- Float clearfix ---- */
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both; } }
+@media (min-width: 1025px) {
+  body {
+    background: #efefef; }
+
+  section {
+    background: #fff;
+    width: 90%;
+    margin: 0 auto; }
+
+  .container {
+    max-width: 1150px;
+    width: 80%;
+    margin: 0 auto; }
+
+  .name {
+    float: left;
+    width: 40%;
+    text-align: left;
+    padding-left: 26px;
+    letter-spacing: .125em; }
+
+  .main-nav {
+    float: right;
+    width: 60%;
+    margin-top: -.35em;
+    text-align: right; }
+
+  .copy {
+    margin-left: -120px; }
+
+  .col {
+    width: 33%; } }
+
+/*# sourceMappingURL=style.css.map */

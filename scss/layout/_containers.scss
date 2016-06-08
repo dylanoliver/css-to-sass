@@ -1,0 +1,22 @@
+.container {
+  @extend %centered;
+  padding: 1em 1em;
+  margin: 0 auto;
+
+  @include tablet {
+  	width: 90%;
+  }
+
+  @include desktop {
+  	max-width: 1150px;
+  	width: 80%;
+  }
+}
+
+section {
+  @include desktop {
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

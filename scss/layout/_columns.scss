@@ -1,0 +1,117 @@
+.lead {
+	font-size: $size-lead;
+
+	@include tablet {
+		float: left;
+		width: 60%;
+		text-align: left;
+		padding: 0 1.25em;
+		margin-top: 0;
+	}
+}
+
+.profile-photo {
+	border: 5px solid #fff;
+
+	@include tablet {
+		float:right;
+		width: 40%;
+	}
+}
+
+.col {
+	@include tablet {
+		display: inline-block;
+		width: 50%;
+		margin-right: -4px;
+		vertical-align: top;
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	@include desktop {
+		display: inline-block;
+		margin-right: -4px;
+		vertical-align: top;
+		padding-right: 1em;
+		padding-left: 1em;
+		width: 33%;
+	}
+}
+
+.copy {
+	float: left;
+	width: 50%;
+	font-size: $size-body;
+	margin-top: .5em;
+
+	@include desktop {
+		margin-left: -120px;
+	}
+}
+
+.top {
+	float: right;
+	width: 50%;
+	text-transform: uppercase;
+	font-size: $size-body-small;
+	text-align: right;
+	margin-top: .5em;
+}
+
+.mobile {
+	@include tablet {
+		visibility: hidden;
+	}
+}
+
+.tablet {
+	visibility: hidden;
+
+	@include tablet {
+		visibility: visible;
+	}
+}
+
+.left {
+	@extend %width;
+	float: left;
+	text-align: left;
+
+	@include tablet {
+		float: left;
+		width: 40%;
+	}
+}
+
+.right {
+	@extend %width;
+	float: right;
+	text-align: right;
+
+	@include tablet {
+		float: left;
+		width: 60%;
+	}
+}
+
+.tablet li.right {
+	@include tablet {
+		display: inline-block;
+		width: 15%;
+	}
+}
+
+.clearfix::after {
+	@include tablet {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+
+
+
+
+

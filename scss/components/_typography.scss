@@ -1,0 +1,25 @@
+body {
+	font-family: $stack-varela;
+	line-height: 1.6;
+	color: $color-body;
+
+	@include desktop {
+		background: #efefef;
+	}
+}
+
+.name {
+	font-family: $stack-serif;
+
+	@include tablet {
+		margin-bottom: 0;
+	}
+
+	@include desktop {
+		float: left;
+		width: 40%;
+		text-align: left;
+		padding-left: 26px;
+		letter-spacing: .125em;
+	}
+}
